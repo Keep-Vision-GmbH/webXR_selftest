@@ -68,7 +68,7 @@ class App {
         // Load a glTF resource
         loader.load(
             // resource URL
-            'office-chair.glb',
+            'drone.glb',
             // called when the resource is loaded
             function (gltf) {
                 const bbox = new THREE.Box3().setFromObject(gltf.scene);
@@ -106,7 +106,7 @@ class App {
         const loader = new FBXLoader().setPath('../../assets/');
         const self = this;
 
-        loader.load('office-chair.fbx',
+        loader.load('drone.fbx',
             function (object) {
                 self.chair = object;
 
